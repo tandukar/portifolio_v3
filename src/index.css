@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fdfcf7;
+  color: #1c1917;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.heading-heavy {
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.06;
+}
+
+/* Subtle organic hand-drawn sketch effects */
+.blob-shape {
+  border-radius: 68% 32% 54% 46% / 42% 61% 39% 58%;
+  transition: all 0.6s ease-in-out;
+}
+.blob-shape:hover {
+  border-radius: 48% 52% 38% 62% / 54% 43% 57% 46%;
+}
+
+/* Smooth transition for navigation pill active states */
+.dock-icon {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.dock-icon:hover {
+  transform: scale(1.15);
+  color: #ffffff;
+}
+
+/* Permanent desktop nav bar with subtle idle opacity and full focus on hover */
+#desktop-nav {
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+#desktop-nav:hover {
+  opacity: 1 !important;
+}
+
+/* Mobile bottom navigation dock */
+#mobile-nav {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
