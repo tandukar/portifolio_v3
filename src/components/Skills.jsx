@@ -1,14 +1,16 @@
 const techStack = [
   'Python',
-  'FastAPI',
-  'Django REST',
+  'Django',
+  'Django REST Framework',
   'React.js',
   'Vue.js',
-  'TypeScript',
   'PostgreSQL',
-  'Docker',
+  'Celery',
   'Redis',
-  'Tailwind CSS',
+  'RabbitMQ',
+  'Docker',
+  'FastAPI',
+  'MongoDB',
 ]
 
 export default function Skills() {
@@ -18,7 +20,7 @@ export default function Skills() {
         <h2 className="text-xs uppercase tracking-widest text-stone-500 font-semibold">
           Core Specializations &amp; Toolkit
         </h2>
-        <span className="text-xs text-stone-500">3+ Years Professional Development</span>
+        <span className="text-xs text-stone-500">Full-Stack, Backend &amp; Pipeline Development</span>
       </div>
       <div className="flex flex-wrap gap-2 sm:gap-3">
         {techStack.map((skill) => (

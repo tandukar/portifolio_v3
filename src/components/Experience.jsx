@@ -1,46 +1,73 @@
-import { Fragment } from 'react'
+import { Fragment } from "react";
 
 const roles = [
   {
-    company: 'Lalitpur Tech Solutions',
-    title: 'Senior Fullstack Engineer',
-    period: '2023 — Present · Lalitpur / Hybrid',
+    company: "Incessant Rain",
+    title: "Python & Tools Developer",
+    period: "May 2024 — Present",
     description: (
       <>
-        Spearheaded back-end architecture migrations from monolithic services
-        to high-throughput <strong className="text-stone-800 font-semibold">FastAPI microservices</strong>,
-        achieving a 42% reduction in p99 API response latencies. Collaborated
-        closely with product designers to ship unified component libraries
-        with <strong className="text-stone-800 font-semibold">React &amp; Tailwind</strong>.
+        Maintain and modernize{" "}
+        <strong className="text-stone-800 font-semibold">
+          Python-based Maya production tooling
+        </strong>{" "}
+        used across a studio-wide VFX/animation pipeline, refactoring legacy
+        plugins to improve reliability and building a centralized{" "}
+        <strong className="text-stone-800 font-semibold">
+          Python TaskManager
+        </strong>{" "}
+        for coordinating production tasks. Resolved threading and concurrency
+        issues affecting task execution stability, and develop{" "}
+        <strong className="text-stone-800 font-semibold">
+          Python automation scripts
+        </strong>{" "}
+        to streamline recurring studio workflows.
       </>
     ),
-    tags: ['FastAPI', 'Python 3.11', 'React', 'PostgreSQL', 'Docker'],
+    tags: ["Python", "Maya", "Tooling", "TaskManager", "Legacy Refactoring"],
   },
   {
-    company: 'Himalayan Software Labs',
-    title: 'Python & Frontend Developer',
-    period: '2021 — 2023 · Kathmandu, Nepal',
+    company: "FlareSight",
+    title: "Django Developer",
+    period: "Jul 2023 — Jul 2024 · ~11 months",
     description: (
       <>
-        Engineered data ingestion pipelines using{' '}
-        <strong className="text-stone-800 font-semibold">Django REST framework</strong>{' '}
-        and Celery task queues. Built responsive customer reporting dashboards
-        using <strong className="text-stone-800 font-semibold">Vue 3 (Composition API)</strong>{' '}
-        and Pinia, improving daily user engagement metrics for enterprise
-        clients.
+        Developed core features for a{" "}
+        <strong className="text-stone-800 font-semibold">
+          Django-based ERP/CRM platform
+        </strong>
+        , including role-based access control, inventory and
+        subscription-management functionality, and a dedicated API service. Set
+        up <strong className="text-stone-800 font-semibold">Docker</strong>
+        -based containerization for the project and handled inter-service
+        communication using{" "}
+        <strong className="text-stone-800 font-semibold">RabbitMQ</strong>{" "}
+        across a microservice architecture.
       </>
     ),
-    tags: ['Django', 'Vue 3', 'Celery', 'Redis', 'REST APIs'],
+    tags: [
+      "Django",
+      "REST APIs",
+      "RBAC",
+      "Docker",
+      "RabbitMQ",
+      "Microservices",
+    ],
   },
-]
+];
 
 export default function Experience() {
   return (
-    <section id="experience" className="space-y-8 sm:space-y-10 pt-4 scroll-mt-16">
+    <section
+      id="experience"
+      className="space-y-8 sm:space-y-10 pt-4 scroll-mt-16"
+    >
       <div className="border-b border-stone-200 pb-4 flex items-baseline justify-between">
-        <h2 className="text-2xl font-bold tracking-tight text-ink">Experience</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-ink">
+          Experience
+        </h2>
         <span className="text-xs uppercase tracking-wider text-stone-500 font-medium">
-          2021 — Present
+          Full-Stack Developer — Backend, Automation & Pipeline Systems
         </span>
       </div>
       <div className="space-y-10 sm:space-y-12">
@@ -48,7 +75,7 @@ export default function Experience() {
           <article
             key={role.company}
             className={`group grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-8 items-start ${
-              i > 0 ? 'pt-6 border-t border-stone-100' : ''
+              i > 0 ? "pt-6 border-t border-stone-100" : ""
             }`}
           >
             <div className="md:col-span-4 space-y-1">
@@ -65,8 +92,14 @@ export default function Experience() {
               <div className="flex flex-wrap gap-2 pt-1">
                 {role.tags.map((tag, idx) => (
                   <Fragment key={tag}>
-                    {idx > 0 && <span className="text-xs font-mono text-stone-400">/</span>}
-                    <span className="text-xs font-mono text-stone-500">{tag}</span>
+                    {idx > 0 && (
+                      <span className="text-xs font-mono text-stone-400">
+                        /
+                      </span>
+                    )}
+                    <span className="text-xs font-mono text-stone-500">
+                      {tag}
+                    </span>
                   </Fragment>
                 ))}
               </div>
@@ -75,5 +108,5 @@ export default function Experience() {
         ))}
       </div>
     </section>
-  )
+  );
 }

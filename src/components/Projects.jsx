@@ -1,21 +1,21 @@
 const projects = [
-  {
-    category: 'FinTech / Automated Trading',
-    badge: 'Freelance',
-    title: 'Kavya Ledger Analytics',
+   {
+    category: 'Logistics / Full-Stack',
+    badge: 'Contract',
+    title: 'Kalpa Logistics — SoftVista',
     description:
-      'Designed and deployed an automated accounting audit platform for a regional credit union. Built a FastAPI asynchronous pipeline processing 50,000+ financial records daily with a lightweight Vue frontend.',
-    tags: ['Python', 'FastAPI', 'Vue.js'],
-    url: 'https://github.com',
+      'Developed full-stack features for a production logistics platform (Django + Vue) across Superadmin, Customer, and Warehouse portals. Diagnosed and resolved a long-standing synchronous-processing bottleneck by rebuilding critical workflows on Celery, Redis, and Celery Beat, and built a Django remediation script that repaired hundreds of shipping records broken by an incomplete municipality-mapping rollout.',
+    tags: ['Django', 'Vue', 'Celery', 'Redis', 'PostgreSQL'],
+    url: '',
   },
   {
-    category: 'SaaS / Creative Studio',
-    badge: 'Contract',
-    title: 'ArtisanFlow Canvas',
+    category: 'LegalTech / Documents',
+    badge: 'Freelance',
+    title: 'PerfectCDR',
     description:
-      'Constructed an interactive asset collaboration platform for independent illustrators and creative agencies. Paired a real-time Django Channels backend with an ultra-responsive React SVG workspace.',
-    tags: ['Django', 'React', 'WebSockets'],
-    url: 'https://github.com',
+      'Built a full-stack CDR/visa-document platform, implementing Django backend APIs and a corresponding React frontend for document workflows.',
+    tags: ['Django', 'React', 'REST APIs'],
+    url: '',
   },
 ]
 
