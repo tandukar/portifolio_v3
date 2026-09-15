@@ -57,7 +57,7 @@ export default function Hero() {
             <a
               aria-label="Send Email"
               className="transition-transform hover:-translate-y-0.5 hover:text-black focus:outline-none p-1 -m-1"
-              href="mailto:hello@pragyotandukar.com"
+              href="mailto:tandukarpragyo123@gmail.com"
             >
               <svg
                 className="w-5 h-5 stroke-[2]"

@@ -15,7 +15,7 @@ export default function Contact() {
         <div className="md:col-span-5 flex flex-col sm:flex-row md:flex-col gap-3 justify-start md:items-end">
           <a
             className="inline-flex items-center justify-center space-x-2 bg-stone-900 hover:bg-black text-white px-6 py-3 rounded-full text-sm font-medium transition-colors shadow-sm"
-            href="mailto:hello@pragyotandukar.com"
+            href="mailto:tandukarpragyo123@gmail.com"
           >
             <svg
               className="w-4 h-4 stroke-[2]"

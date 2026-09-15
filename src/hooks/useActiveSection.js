@@ -13,6 +13,18 @@ export function useActiveSection(sectionIds) {
       const currentScroll = window.pageYOffset || document.documentElement.scrollTop
       setScrolledPast(currentScroll > 150)
 
+      // If we're at (or very near) the bottom of the page, the offset-based
+      // check below can never reach the last section — there may not be
+      // enough room below it to scroll indicatorOffset past its offsetTop.
+      // Handle that case explicitly.
+      const atBottom =
+        window.innerHeight + currentScroll >= document.documentElement.scrollHeight - 2
+
+      if (atBottom) {
+        setActiveId(sectionIds[sectionIds.length - 1])
+        return
+      }
+
       const indicatorOffset = currentScroll + 260
       let current = sectionIds[0]
 
