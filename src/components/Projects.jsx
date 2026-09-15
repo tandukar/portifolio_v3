@@ -1,7 +1,7 @@
 const projects = [
    {
     category: 'Logistics / Full-Stack',
-    badge: 'Contract',
+    badge: 'Freelance',
     title: 'Kalpa Logistics — SoftVista',
     description:
       'Developed full-stack features for a production logistics platform (Django + Vue) across Superadmin, Customer, and Warehouse portals. Diagnosed and resolved a long-standing synchronous-processing bottleneck by rebuilding critical workflows on Celery, Redis, and Celery Beat, and built a Django remediation script that repaired hundreds of shipping records broken by an incomplete municipality-mapping rollout.',
