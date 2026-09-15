@@ -81,8 +81,7 @@ export default function Hero() {
     <img
       alt="Cute coffee cat animation"
       className="w-72 h-72 object-contain relative z-10 mx-auto"
-      // src="/cat.gif"
-     src={`${import.meta.env.BASE_URL}cat.gif`}
+      src={`${import.meta.env.BASE_URL}cat.gif`}
     />
   </div>
   </div>
