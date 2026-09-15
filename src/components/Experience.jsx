@@ -4,7 +4,7 @@ const roles = [
   {
     company: "Incessant Rain",
     title: "Python & Tools Developer",
-    period: "May 2024 — Present",
+    period: "Oct 2024 — Present",
     description: (
       <>
         Maintain and modernize{" "}
