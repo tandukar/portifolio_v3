@@ -13,17 +13,17 @@ export default function Hero() {
           <p className="text-stone-700 sm:text-stone-600 text-base sm:text-lg leading-relaxed max-w-md font-normal">
             Hey there! I'm{' '}
             <span className="font-semibold text-stone-900">Pragyo Tandukar</span>.
-            A dedicated and enthusiastic fullstack web developer hailing from
-            the beautiful city of Lalitpur, Nepal.
+            I build reliable backend systems and the interfaces that sit on top of them.
           </p>
           <p className="text-stone-600 sm:text-stone-500 text-sm sm:text-base leading-relaxed max-w-md">
-            With 3 years of experience crafting robust backends in{' '}
+            Working primarily in{' '}
             <span className="text-stone-900 font-medium">
-              Python (FastAPI, Django)
+              Python &amp; Django
             </span>{' '}
-            and delivering polished, responsive user interfaces with{' '}
+            on the backend, and{' '}
             <span className="text-stone-900 font-medium">React</span> &amp;{' '}
-            <span className="text-stone-900 font-medium">Vue</span>.
+            <span className="text-stone-900 font-medium">Vue</span>{' '}
+            on the frontend.
           </p>
 
           {/* Social Links */}
@@ -31,7 +31,7 @@ export default function Hero() {
             <a
               aria-label="LinkedIn Profile"
               className="transition-transform hover:-translate-y-0.5 hover:text-black focus:outline-none p-1 -m-1"
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/pragyo-tandukar-1291b6233"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -42,7 +42,7 @@ export default function Hero() {
             <a
               aria-label="GitHub Profile"
               className="transition-transform hover:-translate-y-0.5 hover:text-black focus:outline-none p-1 -m-1"
-              href="https://github.com"
+              href="https://github.com/tandukar"
               rel="noopener noreferrer"
               target="_blank"
             >

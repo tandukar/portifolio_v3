@@ -7,21 +7,16 @@ const roles = [
     period: "Oct 2024 — Present",
     description: (
       <>
-        Maintain and modernize{" "}
-        <strong className="text-stone-800 font-semibold">
-          Python-based Maya production tooling
-        </strong>{" "}
-        used across a studio-wide VFX/animation pipeline, refactoring legacy
-        plugins to improve reliability and building a centralized{" "}
-        <strong className="text-stone-800 font-semibold">
-          Python TaskManager
-        </strong>{" "}
-        for coordinating production tasks. Resolved threading and concurrency
-        issues affecting task execution stability, and develop{" "}
-        <strong className="text-stone-800 font-semibold">
-          Python automation scripts
-        </strong>{" "}
-        to streamline recurring studio workflows.
+        Maintain and modernize <strong className="text-stone-800 font-semibold">Python-based production software</strong> supporting
+        a studio-wide 3D production pipeline, refactoring legacy plugins to
+        improve stability and maintainability. Built a centralized{' '}
+        <strong className="text-stone-800 font-semibold">Python TaskManager</strong>{' '}
+        used by 80+ artists to coordinate background production tasks,
+        resolving threading and concurrency issues affecting task execution
+        and UI stability. Develop{' '}
+        <strong className="text-stone-800 font-semibold">automation and integration tools</strong>{' '}
+        connecting Maya with studio REST APIs, network storage, asset/version
+        management, pre-flight validation, and render-farm operations.
       </>
     ),
     tags: ["Python", "Maya", "Tooling", "TaskManager", "Legacy Refactoring"],
@@ -74,9 +69,8 @@ export default function Experience() {
         {roles.map((role, i) => (
           <article
             key={role.company}
-            className={`group grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-8 items-start ${
-              i > 0 ? "pt-6 border-t border-stone-100" : ""
-            }`}
+            className={`group grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-8 items-start ${i > 0 ? "pt-6 border-t border-stone-100" : ""
+              }`}
           >
             <div className="md:col-span-4 space-y-1">
               <h3 className="text-lg font-bold text-stone-900 group-hover:text-black">

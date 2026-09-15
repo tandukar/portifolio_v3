@@ -6,7 +6,7 @@ const projects = [
     description:
       'Developed full-stack features for a production logistics platform (Django + Vue) across Superadmin, Customer, and Warehouse portals. Diagnosed and resolved a long-standing synchronous-processing bottleneck by rebuilding critical workflows on Celery, Redis, and Celery Beat, and built a Django remediation script that repaired hundreds of shipping records broken by an incomplete municipality-mapping rollout.',
     tags: ['Django', 'Vue', 'Celery', 'Redis', 'PostgreSQL'],
-    url: '',
+    url: 'https://kalpalogistics.com.np/',
   },
   {
     category: 'LegalTech / Documents',
@@ -15,7 +15,7 @@ const projects = [
     description:
       'Built a full-stack CDR/visa-document platform, implementing Django backend APIs and a corresponding React frontend for document workflows.',
     tags: ['Django', 'React', 'REST APIs'],
-    url: '',
+    url: 'https://perfectcdr.com/',
   },
 ]
 
