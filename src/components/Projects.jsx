@@ -22,7 +22,7 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="space-y-8 sm:space-y-10 pt-4 scroll-mt-16">
-      <div className="border-b border-stone-200 pb-4 flex items-baseline justify-between">
+      <div className="border-b border-stone-200 pb-4 md:flex items-baseline justify-between">
         <h2 className="text-2xl font-bold tracking-tight text-ink">Selected Client Works</h2>
         <span className="text-xs uppercase tracking-wider text-stone-500 font-medium">
           Freelance &amp; Contract
